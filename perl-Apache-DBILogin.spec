@@ -40,7 +40,6 @@ Apache::AuthDBI Edmunda Mergla.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
 
 %install
 rm -rf $RPM_BUILD_ROOT
