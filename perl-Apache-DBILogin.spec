@@ -1,0 +1,63 @@
+%include	/usr/lib/rpm/macros.perl
+%define	pdir	Apache
+%define	pnam	DBILogin
+Summary:	%{pdir}::%{pnam} perl module 
+Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
+Summary(da):	Perlmodul %{pdir}::%{pnam}
+Summary(de):	%{pdir}::%{pnam} Perl Modul
+Summary(es):	Módulo de Perl %{pdir}::%{pnam}
+Summary(fr):	Module Perl %{pdir}::%{pnam}
+Summary(it):	Modulo di Perl %{pdir}::%{pnam}
+Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul %{pdir}::%{pnam}
+Summary(pl):	Modu³ perla %{pdir}::%{pnam}
+Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
+Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
+Summary(sv):	%{pdir}::%{pnam} Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
+Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
+Name:		perl-%{pdir}-%{pnam}
+Version:	2.0
+Release:	1
+License:	GPL/Artistic
+Group:		Development/Languages/Perl
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+BuildRequires:	perl >= 5
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+Apache::DBILogin allows authentication and authorization against a
+multi-user database.
+
+It is intended to facilitate web-based transactions against a database
+server as a particular database user.  If you wish authenticate against
+a passwd table instead, please see Edmund Mergl's Apache::AuthDBI module.
+
+%description -l pl
+Apache::DBILogin udostêpnia mechanizmy autentykacji i autoryzacji przez
+wielou¿ytkownikow± bazê danych.
+
+%prep
+%setup -q -n %{pdir}-%{pnam}-%{version}
+
+%build
+perl Makefile.PL
+%{__make}
+#%{__make} test
+
+%install
+rm -rf $RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc Changes README
+%{perl_sitelib}/%{pdir}/*.pm
+%{_mandir}/man3/*
