@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	DBILogin
+%define		pdir	Apache
+%define		pnam	DBILogin
 Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
 Summary(pl):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez po³±czenie z DBI
 Name:		perl-Apache-DBILogin
@@ -21,7 +21,7 @@ Apache::DBILogin allows authentication and authorization against a
 multi-user database.
 
 It is intended to facilitate web-based transactions against a database
-server as a particular database user.  If you wish authenticate against
+server as a particular database user. If you wish authenticate against
 a passwd table instead, please see Edmund Mergl's Apache::AuthDBI module.
 
 %description -l pl
