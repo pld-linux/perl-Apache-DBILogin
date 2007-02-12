@@ -2,7 +2,7 @@
 %define		pdir	Apache
 %define		pnam	DBILogin
 Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
-Summary(pl):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez po³±czenie z DBI
+Summary(pl.UTF-8):   Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez poÅ‚Ä…czenie z DBI
 Name:		perl-Apache-DBILogin
 Version:	2.06
 Release:	1
@@ -25,13 +25,13 @@ server as a particular database user. If you wish authenticate against
 a passwd table instead, please see Edmund Mergl's Apache::AuthDBI
 module.
 
-%description -l pl
-Apache::DBILogin udostêpnia mechanizmy uwierzytelniania i autoryzacji
-przez wielou¿ytkownikow± bazê danych.
+%description -l pl.UTF-8
+Apache::DBILogin udostÄ™pnia mechanizmy uwierzytelniania i autoryzacji
+przez wielouÅ¼ytkownikowÄ… bazÄ™ danych.
 
 Jest on zaprojektowany jako udogodnienie dla opartych na WWW
-transakcji wykonywanych na serwerze bazy danych jako okre¶lony
-u¿ytkownik. Uwierzytelnianie na podstawie tabeli hase³ obs³uguje modu³
+transakcji wykonywanych na serwerze bazy danych jako okreÅ›lony
+uÅ¼ytkownik. Uwierzytelnianie na podstawie tabeli haseÅ‚ obsÅ‚uguje moduÅ‚
 Apache::AuthDBI Edmunda Mergla.
 
 %prep
