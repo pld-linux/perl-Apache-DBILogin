@@ -2,7 +2,7 @@
 %define		pdir	Apache
 %define		pnam	DBILogin
 Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
-Summary(pl.UTF-8):   Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez połączenie z DBI
+Summary(pl.UTF-8):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez połączenie z DBI
 Name:		perl-Apache-DBILogin
 Version:	2.06
 Release:	1
