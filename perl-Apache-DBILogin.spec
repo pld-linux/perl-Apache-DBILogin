@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Apache
 %define		pnam	DBILogin
+%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
 Summary(pl.UTF-8):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez połączenie z DBI
 Name:		perl-Apache-DBILogin
@@ -11,6 +11,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	45844b1aba2318535070b5e9bf2bcb6f
+URL:		http://search.cpan.org/dist/Apache-DBILogin/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
