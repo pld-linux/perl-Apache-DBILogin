@@ -1,6 +1,5 @@
 %define		pdir	Apache
 %define		pnam	DBILogin
-%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
 Summary(pl.UTF-8):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez połączenie z DBI
 Name:		perl-Apache-DBILogin
