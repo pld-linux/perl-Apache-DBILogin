@@ -4,7 +4,7 @@ Summary:	Apache::DBILogin - authenticates and authorizes via a DBI connection
 Summary(pl.UTF-8):	Apache::DBILogin - uwierzytelnianie i autoryzacja poprzez połączenie z DBI
 Name:		perl-Apache-DBILogin
 Version:	2.06
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
